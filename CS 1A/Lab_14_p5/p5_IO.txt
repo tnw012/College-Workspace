@@ -1,0 +1,24 @@
+**************************************************
+*  PROGRAMMED BY : Trevin Wolfe
+*  CLASS         : CS1A
+*  SECTION       : TTH-11A
+*  PROB #5       : Boolean Expressions in C++
+**************************************************
+
+Please enter a class rank: 2
+Lower
+Please Enter a class rank: 3
+Lower
+Please Enter a class rank: 4
+Middle
+Please Enter a class rank: 5
+Middle
+Please Enter a class rank: 6
+Middle
+Please Enter a class rank: 7
+Upper
+Please Enter a class rank: 8
+Upper
+Please Enter a class rank: -1
+
+Thank You!

@@ -1,0 +1,30 @@
+**************************************************
+*  PROGRAMMED BY : Trevin Wolfe
+*  CLASS         : CS1A
+*  SECTION       : TTH-11A
+*  PROB #4       : Boolean Expressions in C++
+**************************************************
+
+Enter a class code (F/S/J/R). F
+Enter a class code (F/S/J/R). S
+Enter a class code (F/S/J/R). J
+Enter a class code (F/S/J/R). R
+Enter a class code (F/S/J/R). W
+
+W is an INVALID INPUT - Please try again! 
+
+Enter a class code (F/S/J/R). q
+
+Q is an INVALID INPUT - Please try again! 
+
+Enter a class code (F/S/J/R). t
+
+T is an INVALID INPUT - Please try again! 
+
+Enter a class code (F/S/J/R). y
+
+Y is an INVALID INPUT - Please try again! 
+
+Enter a class code (F/S/J/R). x
+
+Thank You!
