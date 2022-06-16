@@ -4,9 +4,9 @@
 *x84
 *.vs
 *.sln
-*.vxproj
-*.vxproj.filters
-*.vxproj.filters.userg
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.filters.userg
 
 *.settings
 *Debug
