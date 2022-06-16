@@ -1,2 +1,2 @@
-# Algorithms
-This repository holds all of the code for my design and analysis of algorithms class.
+# College Workspace
+This repository holds all of the code for time spent at college.
