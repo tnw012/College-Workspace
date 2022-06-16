@@ -4,6 +4,11 @@
 *.vs
 *.sln
 
+*.settings
+*Debug
+.cproject
+.project
+
 # Byte-compiled / optimized / DLL files
 *.py[cod]
 *$py.class
