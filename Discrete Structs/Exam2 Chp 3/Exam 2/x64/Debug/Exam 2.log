@@ -1,0 +1,3 @@
+﻿  Main.cpp
+C:\Users\trevi\Google Drive\College\School Workspace\c++\Discrete Structs\Exam2 Chp 3\Exam 2\Main.cpp(35,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Exam 2.vcxproj -> C:\Users\trevi\Google Drive\College\School Workspace\c++\Discrete Structs\Exam2 Chp 3\x64\Debug\Exam 2.exe

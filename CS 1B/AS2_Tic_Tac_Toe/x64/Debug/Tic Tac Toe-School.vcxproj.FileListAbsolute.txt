@@ -1,0 +1,2 @@
+C:\Users\trevi\My Projects\Visual Studio 19\C++\Tic Tac Toe-School\x64\Debug\Tic Tac Toe-School.exe
+C:\Users\trevi\My Projects\Visual Studio 19\C++\Tic Tac Toe-School\x64\Debug\Tic Tac Toe-School.pdb

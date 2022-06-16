@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "Chp3_HW_ triathalon"

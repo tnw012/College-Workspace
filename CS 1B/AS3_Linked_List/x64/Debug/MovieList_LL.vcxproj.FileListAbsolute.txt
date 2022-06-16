@@ -1,0 +1,5 @@
+C:\Users\trevi\My Projects\Visual Studio 19\MovieList_LL\x64\Debug\MovieList_LL.exe
+C:\Users\trevi\My Projects\Visual Studio 19\MovieList_LL\x64\Debug\MovieList_LL.pdb
+C:\Users\trevi\My Projects\Visual Studio 19\C++\MovieList_LL\x64\Debug\MovieList_LL.exe
+C:\Users\trevi\My Projects\Visual Studio 19\C++\MovieList_LL\x64\Debug\MovieList_LL.pdb
+C:\Users\trevi\Google Drive\School Workspace\CS 1B Projects\AS3_Linked_List\x64\Debug\MovieList_LL.exe

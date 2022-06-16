@@ -1,0 +1,70 @@
+Enter "begin" to continue or "exit" to exit. begin
+
+Enter your hourly wage: 7.25
+Enter regular hours: 20
+Enter overtime hours: 0
+
+Your weekly pay is $145.0
+
+Enter "begin" to continue or "exit" to exit. begin
+
+Enter your hourly wage: 25
+Enter regular hours: 40
+Enter overtime hours: 10
+
+Your weekly pay is $1375.0
+
+Enter "begin" to continue or "exit" to exit. begin
+
+Enter your hourly wage: 15
+Enter regular hours: 30
+Enter overtime hours: 0
+
+Your weekly pay is $450.0
+
+Enter "begin" to continue or "exit" to exit. begin
+
+Enter your hourly wage: 90
+Enter regular hours: 40
+Enter overtime hours: 5
+
+Your weekly pay is $4275.0
+
+Enter "begin" to continue or "exit" to exit. 35.5
+
+ERROR! wrong command entered.
+
+Enter "begin" to continue or "exit" to exit. begin
+
+Enter your hourly wage: 35.5
+Enter regular hours: 38
+Enter overtime hours: 0
+
+Your weekly pay is $1349.0
+
+Enter "begin" to continue or "exit" to exit. begin
+
+Enter your hourly wage: adlfdkdfj
+Enter regular hours: dkfd
+Enter overtime hours: slfd
+
+ERROR! invalid wage & time input.
+
+Enter your hourly wage: 12
+Enter regular hours: 25
+Enter overtime hours: 0
+
+Your weekly pay is $300.0
+
+Enter "begin" to continue or "exit" to exit. begin
+
+Enter your hourly wage: 40
+Enter regular hours: 38
+Enter overtime hours: 12
+
+Your weekly pay is $2240.0
+
+Enter "begin" to continue or "exit" to exit. exit
+
+
+Process finished with exit code 0
