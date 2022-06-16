@@ -106,7 +106,5 @@ def main():
     print("*" * WIDTH)    
     print("\nProgram Finished")
 
-    print(dynamic_binomial(4,2), math.comb(4, 2))
-
 if __name__ == "__main__":
     main()
