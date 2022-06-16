@@ -1,4 +1,0 @@
-﻿  main.cpp
-C:\Users\trevi\My Projects\VisualStudio19\Lab_2_Coin_Flip\Lab 2 Coin Flip\main.cpp(53,15): warning C4244:  '=': conversion from 'double' to 'int', possible loss of data
-C:\Users\trevi\My Projects\VisualStudio19\Lab_2_Coin_Flip\Lab 2 Coin Flip\main.cpp(56,12): warning C4244:  'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-  Lab 2 Coin Flip.vcxproj -> C:\Users\trevi\My Projects\VisualStudio19\Lab_2_Coin_Flip\x64\Debug\Lab 2 Coin Flip.exe

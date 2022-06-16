@@ -1,3 +1,0 @@
-﻿  PrintClassHeader.cpp
-C:\Users\koopa\Desktop\Comp Sci\CS1B\Applications\Lab 2 Coin Flip\Lab 2 Coin Flip\PrintClassHeader.cpp(12,16): error C2572:  'PrintClassHeader': redefinition of default argument: parameter 1
-C:\Users\koopa\Desktop\Comp Sci\CS1B\Applications\Lab 2 Coin Flip\Lab 2 Coin Flip\header.h(21): message :  see declaration of 'PrintClassHeader'

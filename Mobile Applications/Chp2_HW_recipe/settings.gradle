@@ -1,2 +1,0 @@
-include ':app'
-rootProject.name = "Chp2_HW_recipe"

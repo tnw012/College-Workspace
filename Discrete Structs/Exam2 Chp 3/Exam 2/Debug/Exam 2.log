@@ -1,6 +1,0 @@
-﻿  Main.cpp
-D:\Visual Studio\School Workspace\Exam2 Chp 3\Exam 2\Main.cpp(19,19): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-D:\Visual Studio\School Workspace\Exam2 Chp 3\Exam 2\Main.cpp(20,21): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-D:\Visual Studio\School Workspace\Exam2 Chp 3\Exam 2\Main.cpp(21,20): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-D:\Visual Studio\School Workspace\Exam2 Chp 3\Exam 2\Main.cpp(27,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-  Exam 2.vcxproj -> D:\Visual Studio\School Workspace\Exam2 Chp 3\Debug\Exam 2.exe

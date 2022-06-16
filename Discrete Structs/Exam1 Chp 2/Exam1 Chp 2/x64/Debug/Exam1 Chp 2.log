@@ -1,4 +1,0 @@
-﻿  Main.cpp
-D:\Visual Studio\School Workspace\Exam1 Chp 2\Exam1 Chp 2\Main.cpp(43,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-D:\Visual Studio\School Workspace\Exam1 Chp 2\Exam1 Chp 2\Main.cpp(165,42): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-  Exam1 Chp 2.vcxproj -> D:\Visual Studio\School Workspace\Exam1 Chp 2\x64\Debug\Exam1 Chp 2.exe

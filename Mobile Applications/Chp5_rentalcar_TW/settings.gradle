@@ -1,2 +1,0 @@
-include ':app'
-rootProject.name = "Chp5_rentalcar_TW"
