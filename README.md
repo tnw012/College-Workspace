@@ -1,2 +1,2 @@
 # College Workspace
-This repository holds all of the code for time spent at college.
+This repository holds all of the code written during my time spent at college.
