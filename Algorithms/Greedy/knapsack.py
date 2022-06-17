@@ -1,7 +1,5 @@
-from audioop import reverse
 from dataclasses import dataclass
 from operator import attrgetter
-import random
 
 @dataclass
 class Item :
