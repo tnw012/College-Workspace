@@ -7,7 +7,7 @@ BORDER_CHAR = '-'
 BORDER_WIDTH = 50
 
 # test function that handles the test of each knapsack problem algorithms
-def test_knapsack(test_number=100):
+def test_knapsack(test_number=10):
     import array
     import time
 
@@ -61,7 +61,7 @@ def test_knapsack(test_number=100):
                 knapsack   = ks.Knapsack()
 
                 start_time = time.perf_counter()
-                knapsack.dynamic(item_list)
+                optimal_value = knapsack.dynamic(item_list)
                 end_time = time.perf_counter()
 
                 # calculate the total time in milliseconds then append time to a time array.
@@ -72,7 +72,7 @@ def test_knapsack(test_number=100):
             average_time = calculate_average_time(time_array)
 
             print("The average time out of %i tests was %.4f ms" % (test_number, average_time))
-            print(knapsack)
+            print(optimal_value)
             print()
 
 def main():
@@ -90,6 +90,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-    
-
-    

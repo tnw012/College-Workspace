@@ -30,7 +30,18 @@ class Knapsack:
     
     # Algorithm for the Knapsack Problem
     def dynamic(self, input_list):
-        pass
+        self.__knapsack = [[0 for x in range(self.MAX_CAPACITY + 1)] for x in range(len(input_list) + 1)]
+
+        for i in range (len(input_list) + 1):
+            for j in range(self.MAX_CAPACITY + 1):
+                if i == 0 or j == 0:
+                    self.__knapsack[i][j] = 0
+                elif input_list[i - 1].weight <= j:
+                    self.__knapsack[i][j] = max(input_list[i - 1].value + self.__knapsack[i - 1][j - input_list[i - 1].weight], self.__knapsack[i - 1][j])
+                else:
+                    self.__knapsack[i][j] = self.__knapsack[i - 1][j]
+
+        return self.__knapsack[len(input_list)][self.MAX_CAPACITY]
 
     # Fractional Greedy Algorithm for the Knapsack Problem
     def fractional_greedy(self, input_list):
