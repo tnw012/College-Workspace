@@ -1,6 +1,3 @@
-import random
-import math
-
 # Global Constants
 RANDOM_LOWER_BOUND = 1
 RANDOM_UPPER_BOUND = 15
@@ -34,6 +31,7 @@ def dynamic_binomial(n, k):
 def test_binomial(binomial_function, test_number=100):
     import array
     import math
+    import random
     import time
 
     # nested function to help with calculating the average time.
