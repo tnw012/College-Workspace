@@ -1,3 +1,7 @@
+# python modules
+from operator import attrgetter
+
+# my modules
 import generate as g
 import knapsack as ks
 
@@ -27,20 +31,26 @@ def test_knapsack(test_number=10):
     time_array = array.array("f")
     average_time = 0.0
     
-    item_list = g.generate_list()
+    ks.item_list = g.generate_list(5)
     
     # loop twice to test both algorithm
     for index in range(2):
 
         if index == 0:
-            print("Testing the Fractional Greedy Algorithm")
+            print("Testing the Backtracking Algorithm")
+
+            ks.item_list.sort(key=attrgetter("weight"))
+            total = 0
             
+            for item in ks.item_list:
+                total += item.weight
+
             # loop from 0 to test_number(number of tests)
             for i in range(test_number):
                 knapsack   = ks.Knapsack()
 
                 start_time = time.perf_counter()
-                knapsack.fractional_greedy(item_list)
+                knapsack.backtrack(0, 0, total)
                 end_time = time.perf_counter()
 
                 # calculate the total time in milliseconds then append time to a time array.
@@ -60,7 +70,7 @@ def test_knapsack(test_number=10):
                 knapsack   = ks.Knapsack()
 
                 start_time = time.perf_counter()
-                optimal_value = knapsack.dynamic(item_list)
+                optimal_value = knapsack.dynamic(ks.item_list)
                 end_time = time.perf_counter()
 
                 # calculate the total time in milliseconds then append time to a time array.
