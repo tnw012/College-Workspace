@@ -50,7 +50,7 @@ def test_knapsack(test_number=10):
                 knapsack   = ks.Knapsack()
 
                 start_time = time.perf_counter()
-                knapsack.backtrack(0, 0, total)
+                ks.backtrack(0, 0, total)
                 end_time = time.perf_counter()
 
                 # calculate the total time in milliseconds then append time to a time array.
@@ -98,4 +98,11 @@ def main():
     print("Program Finished!")
 
 if __name__ == "__main__":
-    main()
+    #main()
+
+    my_list = g.generate_list(5)
+
+    my_list.sort(key=attrgetter("weight"))
+
+    for item in my_list:
+        print(item)

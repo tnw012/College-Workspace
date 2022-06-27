@@ -2,6 +2,8 @@ from dataclasses import dataclass
 from operator import attrgetter
 
 item_list = list()
+include = list()
+MAX_WEIGHT = 30
 
 @dataclass
 class Item :
@@ -71,14 +73,16 @@ class Knapsack:
             self.__knapsack.append(input_list[index])
             index += 1
 
-    def backtrack(self, index, weight, total):
-        if (self.is_valid(index, weight, total)):
-            if weight == self.MAX_CAPACITY:
-                print(self.__knapsack[1:index])
-            else:
-                self.__knapsack.append(item_list[index])
-                self.backtrack(index + 1, weight + item_list[index].weight, total - item_list[index].weight)
-                self.backtrack(index + 1, weight, total - item_list[index].weight)
 
-    def is_valid(self, index, weight, total):
-        return (weight + total >= self.MAX_CAPACITY) and (weight == self.MAX_CAPACITY or weight + item_list[index].weight <= self.MAX_CAPACITY)
+def backtrack(index, weight, total):
+    if (is_valid(index, weight, total)):
+        if weight == MAX_WEIGHT:
+            print(include[:index])
+        else:
+            include.append(item_list[index])
+            backtrack(index + 1, weight + item_list[index].weight, total - item_list[index].weight)
+            include.remove(item_list[index])
+            backtrack(index + 1, weight, total - item_list[index+1].weight)
+
+def is_valid(index, weight, total):
+    return (weight + total >= MAX_WEIGHT) and (weight == MAX_WEIGHT or weight + item_list[index].weight <= MAX_WEIGHT)
