@@ -12,6 +12,18 @@ def generate_item():
 def generate_list(size=10):
     generated_list = list()
 
+    def item_exists(item_list, random_item):
+        exists = False
+        i = 0
+
+        while i < len(item_list):
+            if random_item.weight == item_list[i].weight:
+                exists = True
+            
+            i += 1
+
+        return exists
+
     for i in range(size):
         item = generate_item()
         
@@ -22,14 +34,4 @@ def generate_list(size=10):
 
     return generated_list
 
-def item_exists(item_list, random_item):
-    exists = False
-    i = 0
 
-    while i < len(item_list):
-        if random_item.weight == item_list[i].weight:
-            exists = True
-        
-        i += 1
-
-    return exists
