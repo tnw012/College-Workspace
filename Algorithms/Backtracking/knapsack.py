@@ -79,10 +79,10 @@ def backtrack(index, weight, total):
         if weight == MAX_WEIGHT:
             print(include[:index])
         else:
-            include.append(item_list[index])
+            include.append(item_list[index].weight)
             backtrack(index + 1, weight + item_list[index].weight, total - item_list[index].weight)
-            include.remove(item_list[index])
-            backtrack(index + 1, weight, total - item_list[index+1].weight)
+            include.remove(item_list[index].weight)
+            backtrack(index + 1, weight, total - item_list[index].weight)
 
 def is_valid(index, weight, total):
     return (weight + total >= MAX_WEIGHT) and (weight == MAX_WEIGHT or weight + item_list[index].weight <= MAX_WEIGHT)

@@ -11,27 +11,34 @@ def generate_item():
 
 def generate_list(size=10):
     generated_list = list()
+    count = 0
 
-    def item_exists(item_list, random_item):
-        exists = False
+    def count_items(item_list, item_weight):
+        count = 0
         i = 0
 
         while i < len(item_list):
-            if random_item.weight == item_list[i].weight:
-                exists = True
+            if item_list[i].weight == item_weight:
+                count += 1
             
             i += 1
 
-        return exists
+        return count
 
     for i in range(size):
         item = generate_item()
-        
-        while item_exists(generated_list, item):
-            item = generate_item()
+
+        if item.weight > 15:
+            count = count_items(generated_list, item.weight)
+
+            if count > 0:
+                item = generate_item()
+        else:
+            count = count_items(generated_list, item.weight)
+
+            if count > 1:
+                item = generate_item()
 
         generated_list.append(item)
 
     return generated_list
-
-

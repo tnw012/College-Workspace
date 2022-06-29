@@ -11,7 +11,7 @@ BORDER_CHAR = '-'
 BORDER_WIDTH = 50
 
 # test function that handles the test of each knapsack problem algorithms
-def test_knapsack(test_number=10):
+def test_knapsack(test_number=100):
     import array
     import time
 
@@ -37,18 +37,17 @@ def test_knapsack(test_number=10):
     for index in range(2):
 
         if index == 0:
-            print("Testing the Backtracking Algorithm")
-
-            ks.item_list.sort(key=attrgetter("weight"))
+            print("Testing Backtracking Algorithm")
             total = 0
-            
+
+            # sort item_list so backtracking is the most optimal
+            ks.item_list.sort(key=attrgetter("weight"))
+
             for item in ks.item_list:
                 total += item.weight
 
             # loop from 0 to test_number(number of tests)
             for i in range(test_number):
-                knapsack   = ks.Knapsack()
-
                 start_time = time.perf_counter()
                 ks.backtrack(0, 0, total)
                 end_time = time.perf_counter()
@@ -63,7 +62,7 @@ def test_knapsack(test_number=10):
             print("The average time out of %i tests was %.4f ms\n" % (test_number, average_time))
             print(knapsack, "\n")
         else:
-            print("Testing the Dynamic Algorithm")
+            print("Testing Dynamic Algorithm")
             
             # loop from 0 to test_number(number of tests)
             for i in range(test_number):
@@ -98,11 +97,4 @@ def main():
     print("Program Finished!")
 
 if __name__ == "__main__":
-    #main()
-
-    my_list = g.generate_list(5)
-
-    my_list.sort(key=attrgetter("weight"))
-
-    for item in my_list:
-        print(item)
+    main()
