@@ -60,7 +60,6 @@ def test_knapsack(test_number=100):
             average_time = calculate_average_time(time_array)
 
             print("The average time out of %i tests was %.4f ms\n" % (test_number, average_time))
-            print(knapsack, "\n")
         else:
             print("Testing Dynamic Algorithm")
             
