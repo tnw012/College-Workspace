@@ -73,7 +73,6 @@ class Knapsack:
             self.__knapsack.append(input_list[index])
             index += 1
 
-
 def backtrack(index, weight, total):
     if (is_valid(index, weight, total)):
         if weight == MAX_WEIGHT:

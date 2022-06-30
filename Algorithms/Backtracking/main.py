@@ -12,13 +12,6 @@ program_dict = {
     "BORDER_WIDTH": 50
 }
 
-OUTPUT_FILENAME = "output.txt"
-
-PROGRAM_TITLE = "Knapsack Test Program"
-MAIN_BORDER_CHAR = '*'
-BORDER_CHAR = '-'
-BORDER_WIDTH = 50
-
 # test function that handles the test of each knapsack problem algorithms
 def test_knapsack(test_number=100):
     import array
