@@ -5,6 +5,15 @@ from operator import attrgetter
 import generate as g
 import knapsack as ks
 
+program_dict = {
+    "TITLE" : "Knapsack Test Program",
+    "MAIN_BORDER": "*",
+    "BORDER":"-",
+    "BORDER_WIDTH": 50
+}
+
+OUTPUT_FILENAME = "output.txt"
+
 PROGRAM_TITLE = "Knapsack Test Program"
 MAIN_BORDER_CHAR = '*'
 BORDER_CHAR = '-'
@@ -81,19 +90,19 @@ def test_knapsack(test_number=100):
             print("The average time out of %i tests was %.4f ms" % (test_number, average_time))
             print(optimal_value)
             print()
-
+    
 def main():
 
     # print the border and titile of the program
-    print(MAIN_BORDER_CHAR * BORDER_WIDTH)
-    print(PROGRAM_TITLE)
-    print(BORDER_CHAR * BORDER_WIDTH)
+    print(program_dict["MAIN_BORDER"] * program_dict["BORDER_WIDTH"])
+    print(program_dict["TITLE"])
+    print(program_dict["BORDER"] * program_dict["BORDER_WIDTH"])
     
     test_knapsack()
 
     # print the bottom border of the program
-    print(MAIN_BORDER_CHAR * BORDER_WIDTH)
+    print(program_dict["MAIN_BORDER"] * program_dict["BORDER_WIDTH"])
     print("Program Finished!")
 
-if __name__ == "__main__":
+if __name__ == "__main__":    
     main()
