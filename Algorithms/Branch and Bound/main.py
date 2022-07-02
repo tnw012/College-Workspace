@@ -85,13 +85,26 @@ def test_knapsack(test_number=100):
             print()
     
 def main():
+    profit_list = list()
+    weight_list = list()
 
     # print the border and titile of the program
     print(program_dict["MAIN_BORDER"] * program_dict["BORDER_WIDTH"])
     print(program_dict["TITLE"])
     print(program_dict["BORDER"] * program_dict["BORDER_WIDTH"])
     
-    test_knapsack()
+    # generate a list then sort it by weight
+    generated_list = g.generate_list(5)
+    
+    for item in generated_list:
+        profit_list.append(item.profit)
+        weight_list.append(item.weight)
+        
+    profit_list.sort(reverse=True)
+    weight_list.sort(reverse=True)
+    
+    #test_knapsack()
+    ks.breadth_knapsack(len(generated_list), profit_list, weight_list)
 
     # print the bottom border of the program
     print(program_dict["MAIN_BORDER"] * program_dict["BORDER_WIDTH"])
