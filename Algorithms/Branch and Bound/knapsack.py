@@ -39,7 +39,13 @@ class BestNode:
                  f"Bound: {str(self.bound)}\n"           
         return string
     
-    
+    def __lt__(self, other):
+        if (isinstance (other, int) or isinstance(other, float)):
+            return self. profit() > other
+        elif (isinstance(other, complex)):
+            return self.profit > other.profit
+        else:
+            return TypeError
 
 def bound(n, Node, p_list, w_list):
     j = 0 
@@ -98,11 +104,11 @@ def breadth_first_knapsack(n, p_list, w_list):
         
         if (bound(n, NodeU, p_list, w_list) > max_profit):
             BreadthQueue.put(NodeU)
-            
-    print(f"The max profit that could be had is: {max_profit}")
     
-    BreadthQueue.task_done()
+        BreadthQueue.task_done()
     
+    return max_profit  
+
 def best_first_knapsack(n, p_list, w_list):
     PQ = PriorityQueue()
     NodeU = BestNode(0, 0, 0, 0.0)
@@ -134,8 +140,8 @@ def best_first_knapsack(n, p_list, w_list):
             
             if (NodeU.bound > max_profit):
                 PQ.put(NodeU)
-            
-    print(f"The max profit that could be had is: {max_profit}")
-            
-    #PQ.task_done()
-        
+    
+    PQ.task_done()    
+    
+    return max_profit
+                    
