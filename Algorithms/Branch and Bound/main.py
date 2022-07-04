@@ -85,7 +85,7 @@ def test_knapsack(test_number=100):
             print("The max profit that could be had is: %i" % (optimal_profit))
     
 def main():  
-    # print the border and titile of the program
+    # print the border and title of the program
     print(program_dict["MAIN_BORDER"] * program_dict["BORDER_WIDTH"])
     print(program_dict["TITLE"])
     print(program_dict["BORDER"] * program_dict["BORDER_WIDTH"])
