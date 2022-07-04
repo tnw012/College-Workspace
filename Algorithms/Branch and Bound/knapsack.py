@@ -24,13 +24,22 @@ class Node:
                  f"Profit: {str(self.profit)}\n" \
                  f"Weight: {str(self.weight)}\n"         
         return string
-
+    
 @dataclass
 class BestNode:
     level : int
     profit : int
     weight : int
     bound  : float
+    
+    def __str__(self):
+        string = f"Node level: {str(self.level)}\n" \
+                 f"Profit: {str(self.profit)}\n" \
+                 f"Weight: {str(self.weight)}\n" \
+                 f"Bound: {str(self.bound)}\n"           
+        return string
+    
+    
 
 def bound(n, Node, p_list, w_list):
     j = 0 
@@ -42,23 +51,22 @@ def bound(n, Node, p_list, w_list):
         return 0
     else:
         result = Node.profit
-        j = Node.level
+        j = Node.level + 1
         total_weight = Node.weight
         
         while (j < n and total_weight + w_list[j] <= MAX_WEIGHT):
             total_weight = total_weight + w_list[j]
             result = result + p_list[j]
             j += 1
-    
-        k =  j
-        if (k <= n):
+            
+        if (j < n):
             result = result + (MAX_WEIGHT - total_weight) * p_list[k] / w_list[k]
         
         return result
 
-def breadth_knapsack(n, p_list, w_list):
+def breadth_first_knapsack(n, p_list, w_list):
     BreadthQueue = Queue()
-    NodeV = Node(0, 0, 0)
+    NodeV = Node(-1, 0, 0)
     NodeU = Node(0, 0, 0)
     
     max_profit = 0
@@ -68,6 +76,12 @@ def breadth_knapsack(n, p_list, w_list):
     while not BreadthQueue.empty():
         
         NodeV = BreadthQueue.get()
+        
+        if NodeV.level == -1:
+            NodeU.level = 0
+            
+        if NodeV.level == n - 1:
+            continue
         
         NodeU.level = NodeV.level + 1
         NodeU.weight = NodeV.weight + w_list[NodeU.level]
@@ -87,6 +101,8 @@ def breadth_knapsack(n, p_list, w_list):
             
     print(f"The max profit that could be had is: {max_profit}")
     
+    BreadthQueue.task_done()
+    
 def best_first_knapsack(n, p_list, w_list):
     PQ = PriorityQueue()
     NodeU = BestNode(0, 0, 0, 0.0)
@@ -96,7 +112,7 @@ def best_first_knapsack(n, p_list, w_list):
     NodeV.bound = bound(n, NodeV, p_list, w_list)
     PQ.put(NodeV)
     
-    while not PQ.empty:
+    while not PQ.empty():
         NodeV = PQ.get()
         
         if (NodeV.bound > max_profit):
@@ -104,18 +120,22 @@ def best_first_knapsack(n, p_list, w_list):
             NodeU.profit = NodeV.profit + p_list[NodeU.level]
             NodeU.weight = NodeV.weight + w_list[NodeU.level]
             
-        if (NodeU.weight <= MAX_WEIGHT and NodeU.profit > max_profit):
-            max_profit = NodeU.profit
-        
-        if NodeU.bound > max_profit:
-            PQ.put(NodeU)
-        
-        NodeU.weight = NodeV.weight
-        NodeU.profit = NodeV.profit
-        NodeU.bound = bound(n, NodeU, p_list, w_list)
-        
-        if (NodeU.bound > max_profit):
-            PQ.put(NodeU)
+            if (NodeU.weight <= MAX_WEIGHT and NodeU.profit > max_profit):
+                max_profit = NodeU.profit
+                
+            NodeU.bound = bound(n, NodeU, p_list, w_list)
             
-        
+            if NodeU.bound > max_profit:
+                PQ.put(NodeU)
+            
+            NodeU.weight = NodeV.weight
+            NodeU.profit = NodeV.profit
+            NodeU.bound = bound(n, NodeU, p_list, w_list)
+            
+            if (NodeU.bound > max_profit):
+                PQ.put(NodeU)
+            
+    print(f"The max profit that could be had is: {max_profit}")
+            
+    #PQ.task_done()
         

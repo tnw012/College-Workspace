@@ -84,7 +84,7 @@ def test_knapsack(test_number=100):
             print(optimal_value)
             print()
     
-def main():
+def main():  
     profit_list = list()
     weight_list = list()
 
@@ -104,7 +104,9 @@ def main():
     weight_list.sort(reverse=True)
     
     #test_knapsack()
-    ks.breadth_knapsack(len(generated_list), profit_list, weight_list)
+    ks.breadth_first_knapsack(len(generated_list), profit_list, weight_list)
+    
+    #ks.best_first_knapsack(len(generated_list), profit_list, weight_list)
 
     # print the bottom border of the program
     print(program_dict["MAIN_BORDER"] * program_dict["BORDER_WIDTH"])
