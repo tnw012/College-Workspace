@@ -63,7 +63,7 @@ def test_knapsack(test_number=100):
             average_time = calculate_average_time(time_array)
 
             print("The average time out of %i tests = %.4f ms" % (test_number, average_time))
-            print(f"The max profit that could be had is: {optimal_profit}")
+            print("The max profit that could be had is: %i" % (optimal_profit))
         else:
             print("\nTesting Best-First with Branch and Bound Algorithm")
             
@@ -82,7 +82,7 @@ def test_knapsack(test_number=100):
             average_time = calculate_average_time(time_array)
 
             print("The average time out of %i tests = %.4f ms" % (test_number, average_time))
-            print(f"The max profit that could be had is: {optimal_profit}")
+            print("The max profit that could be had is: %i" % (optimal_profit))
     
 def main():  
     # print the border and titile of the program
