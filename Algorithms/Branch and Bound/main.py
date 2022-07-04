@@ -1,6 +1,3 @@
-# python modules
-from operator import attrgetter
-
 # my modules
 import generate as g
 import knapsack as ks
