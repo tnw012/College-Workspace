@@ -32,8 +32,8 @@ def sequential_search(search_key, sorted_list):
     """
     Sequential Search Algorithm
     ------------------------------------------------
-    sortList  : Array or list to be sorted
-    searchKey : Holds the item to search for
+    sorted_list  : Array or list to be sorted
+    search_key : Holds the item to search for
     index     : Specifies the index of array or list
     ------------------------------------------------
     Time Complexity  :
