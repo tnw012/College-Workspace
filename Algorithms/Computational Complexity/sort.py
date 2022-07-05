@@ -1,5 +1,5 @@
 # Swap
-def swap(sortList, index, swapIndex):
+def __swap(sortList, index, swapIndex):
     """
     Swap Sort Algorithm: Basic sorting algorithm
     --------------------------------------------------
@@ -14,13 +14,13 @@ def swap(sortList, index, swapIndex):
     sortList[swapIndex] = temp
 
 # Selection Sort
-def selectionSort(sortList):
+def selection_sort(sort_list):
     """
     Selection Sort
     --------------------------------------------------
     sortList    : Array or list to be sorted
     index       : Specifies the index of array or list
-    minIndex    : Holds the first or beginning index
+    min         : Holds the first or beginning index
     nestedIndex : Represents the index that is nested
     --------------------------------------------------
     Time Complexity  :
@@ -31,13 +31,14 @@ def selectionSort(sortList):
     """
     index = 0
     # Outer Loop that runs the length of the list being sorted.
-    while index < len(sortList) - 1:
-        minIndex = index
+    while index < len(sort_list) - 1:
+        min = index
         nestedIndex = index + 1
-        while nestedIndex < len(sortList):
-            if sortList[nestedIndex] < sortList[minIndex]:
-                minIndex = nestedIndex
+        while nestedIndex < len(sort_list):
+            if sort_list[nestedIndex] < sort_list[min]:
+                min = nestedIndex
             nestedIndex += 1
-        if minIndex != index:
-            swap(sortList, minIndex, index)
+        if min != index:
+            __swap(sort_list, min, index)
         index += 1
+        
