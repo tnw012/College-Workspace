@@ -28,11 +28,11 @@ def binary_search(search_key, sorted_list):
     return -1
 
 # Sequential Search
-def sequential_search(search_key, sorted_list):
+def sequential_search(search_key, search_list):
     """
     Sequential Search Algorithm
     ------------------------------------------------
-    sorted_list  : Array or list to be sorted
+    search_list  : Array or list to be sorted
     search_key : Holds the item to search for
     index     : Specifies the index of array or list
     ------------------------------------------------
@@ -42,8 +42,8 @@ def sequential_search(search_key, sorted_list):
     """
     index = 0
     
-    while index < len(sorted_list):
-        if search_key == sorted_list[index]:
-            return search_key
+    while index < len(search_list):
+        if search_key == search_list[index]:
+            return index
         index += 1
     return -1
