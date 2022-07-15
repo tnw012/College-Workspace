@@ -3,7 +3,7 @@ import random as r
 
 # my modules
 import generate as g
-import bin_packing as bp
+import test as t
 
 def calc_total(num_list):
     total = 0
@@ -31,8 +31,7 @@ def main():
     generated_list   = list()
     
     # generate a random list of numbers 
-    generated_list = g.generate_list(LIST_SIZE)
-    
+    generated_list = g.generate_list(LIST_SIZE) 
 
     # print the border and title of the program
     print(program_dict["MAIN_BORDER"] * program_dict["BORDER_WIDTH"])
@@ -41,8 +40,9 @@ def main():
     
     print("list size: " + str(len(generated_list)))
     
-    print("minimum number of bins: ", ceil((calc_total(generated_list)) / (BIN_CAPACITY)))
-    print("next-fit number of bins: ", bp.next_fit(generated_list, BIN_CAPACITY))
+    print("minimum number of bins: ", ceil((sum(generated_list) / BIN_CAPACITY)), "\n")
+    
+    t.test_binpacking(generated_list, BIN_CAPACITY)
     
     # print the bottom border of the program
     print(program_dict["MAIN_BORDER"] * program_dict["BORDER_WIDTH"])

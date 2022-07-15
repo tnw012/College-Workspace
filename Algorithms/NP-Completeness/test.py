@@ -1,6 +1,8 @@
-def test_binpacking(test_number=100):
+def test_binpacking(num_list, capacity, test_number=100):
     import array
     import time
+    
+    import bin_packing as bp
 
     # nested function to help with calculating the average time.
     def calculate_average_time(t_array):
@@ -22,13 +24,14 @@ def test_binpacking(test_number=100):
     for index in range(2):
 
         if index == 0:
-            print("Testing NPC first-fit:")
+            print("Testing NP-Completeness next-fit:")
 
             # loop from 0 to test_number(number of tests)
             for i in range(test_number):
                 start_time = time.perf_counter()
             
-            
+                
+                next_bin_total = bp.next_fit(num_list, capacity)
             
             
                 end_time = time.perf_counter()
@@ -41,17 +44,16 @@ def test_binpacking(test_number=100):
             average_time = calculate_average_time(time_array)
 
             print("The average time out of %i tests = %.4f ms" % (test_number, average_time))
-            print("The max profit that could be had is: %i" % ())
+            print("next-fit number of bins: ", next_bin_total)
         else:
-            print("\nTesting NPC Best-fit:")
+            print("\nTesting NP-Completeness best-fit:")
             
             # loop from 0 to test_number(number of tests)
             for i in range(test_number):
                 
-                start_time = time.perf_counter()
+                start_time = time.perf_counter()            
             
-            
-            
+                best_bin_total = bp.best_fit(num_list, capacity, len(num_list))
             
                 end_time = time.perf_counter()
 
@@ -63,4 +65,4 @@ def test_binpacking(test_number=100):
             average_time = calculate_average_time(time_array)
 
             print("The average time out of %i tests = %.4f ms" % (test_number, average_time))
-            print("The max profit that could be had is: %f" % ())
+            print("best-fit number of bins required: ", best_bin_total)
