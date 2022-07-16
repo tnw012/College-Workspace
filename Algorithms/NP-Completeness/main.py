@@ -5,15 +5,6 @@ import random as r
 import generate as g
 import test as t
 
-def calc_total(num_list):
-    total = 0
-    
-    for number in num_list:
-        total += number
-        
-    return total
-
-
 program_dict = {
     "TITLE" : "NP-Completeness Test Program",
     "MAIN_BORDER": "*",
