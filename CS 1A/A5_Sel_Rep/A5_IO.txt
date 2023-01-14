@@ -1,0 +1,35 @@
+**************************************************
+*  PROGRAMMED BY : Trevin Wolfe
+*  CLASS         : CS1A
+*  SECTION       : TTH-11A
+*  ASSIGN #5     : Selection - Repetition
+**************************************************
+
+TEST CASE # 1:
+	Enter Letter Grade #1: A
+	Enter Letter Grade #2: b
+	Enter Letter Grade #3: C
+	Enter Letter Grade #4: X
+
+Total Grade Points: 9
+GPA: 3.00
+
+
+TEST CASE # 2:
+	Enter Letter Grade #1: a
+	Enter Letter Grade #2: b
+	Enter Letter Grade #3: A
+	Enter Letter Grade #4: d
+	Enter Letter Grade #5: C
+	Enter Letter Grade #6: F
+	Enter Letter Grade #7: a
+	Enter Letter Grade #8: X
+
+Total Grade Points: 18
+GPA: 2.57
+
+
+TEST CASE # 3:
+	Enter Letter Grade #1: X
+
+	

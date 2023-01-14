@@ -1,0 +1,38 @@
+**************************************************
+Computational Complexity Test Program
+--------------------------------------------------
+Binary Search Test:
+
+The average time out of 100 tests = 0.0017 ms     
+Size of the array: 10
+Index of Item Searched:  9
+--------------------------------------------------
+Sequential Search Test: (Array not sorted)
+
+The average time out of 100 tests = 0.0005 ms
+Size of the array: 10
+Index of Item Searched:  0
+--------------------------------------------------
+Mergesort Test:
+
+Original Array:
+ [81, 11, 48, 56, 54, 78, 46, 67, 64, 45]
+
+The average time out of 100 tests = 0.0202 ms
+Size of the array: 10
+
+Sorted Array:
+ [11, 45, 46, 48, 54, 56, 64, 67, 78, 81]
+--------------------------------------------------
+Selection Sort Test:
+
+Original Array:
+ [81, 11, 48, 56, 54, 78, 46, 67, 64, 45]
+
+The average time out of 100 tests = 0.0074 ms
+Size of the array: 10
+
+Sorted Array:
+ [11, 45, 46, 48, 54, 56, 64, 67, 78, 81]
+**************************************************
+Program Finished!

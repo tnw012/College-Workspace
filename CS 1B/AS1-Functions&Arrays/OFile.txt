@@ -1,0 +1,32 @@
+**************************************************
+*  PROGRAMMED BY : Trevin Wolfe
+*  CLASS         : CS1B
+*  SECTION       : MW - 7:30pm
+*  ASSIGNMENT #1 : Functions and Arrays
+**************************************************
+
+Larger Balance:
+ID #     NAME                     BALANCE DUE
+----     --------------------     -----------
+1002     Steve Woolston           $   1423.20
+
+Smaller Balance:
+ID #     NAME                     BALANCE DUE
+----     --------------------     -----------
+1003     Don McBride              $     12.32
+
+Smaller Balance:
+ID #     NAME                     BALANCE DUE
+----     --------------------     -----------
+1003     Don McBride              $     12.32
+
+Smaller Balance:
+ID #     NAME                     BALANCE DUE
+----     --------------------     -----------
+1003     Don McBride              $     12.32
+
+Smaller Balance:
+ID #     NAME                     BALANCE DUE
+----     --------------------     -----------
+1003     Don McBride              $     12.32
+
