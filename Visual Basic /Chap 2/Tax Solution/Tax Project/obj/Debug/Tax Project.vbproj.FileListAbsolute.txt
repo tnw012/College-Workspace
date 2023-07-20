@@ -1,0 +1,12 @@
+C:\Users\trevi\My Projects\Visual Studio 17\VB2017\Chap02\Tax Solution\Tax Project\bin\Debug\Tax Project.exe.config
+C:\Users\trevi\My Projects\Visual Studio 17\VB2017\Chap02\Tax Solution\Tax Project\bin\Debug\Tax Project.exe
+C:\Users\trevi\My Projects\Visual Studio 17\VB2017\Chap02\Tax Solution\Tax Project\bin\Debug\Tax Project.pdb
+C:\Users\trevi\My Projects\Visual Studio 17\VB2017\Chap02\Tax Solution\Tax Project\bin\Debug\Tax Project.xml
+C:\Users\trevi\My Projects\Visual Studio 17\VB2017\Chap02\Tax Solution\Tax Project\obj\Debug\Tax Project.vbprojAssemblyReference.cache
+C:\Users\trevi\My Projects\Visual Studio 17\VB2017\Chap02\Tax Solution\Tax Project\obj\Debug\Tax_Project.frmMain.resources
+C:\Users\trevi\My Projects\Visual Studio 17\VB2017\Chap02\Tax Solution\Tax Project\obj\Debug\Tax_Project.Resources.resources
+C:\Users\trevi\My Projects\Visual Studio 17\VB2017\Chap02\Tax Solution\Tax Project\obj\Debug\Tax Project.vbproj.GenerateResource.cache
+C:\Users\trevi\My Projects\Visual Studio 17\VB2017\Chap02\Tax Solution\Tax Project\obj\Debug\Tax Project.vbproj.CoreCompileInputs.cache
+C:\Users\trevi\My Projects\Visual Studio 17\VB2017\Chap02\Tax Solution\Tax Project\obj\Debug\Tax Project.exe
+C:\Users\trevi\My Projects\Visual Studio 17\VB2017\Chap02\Tax Solution\Tax Project\obj\Debug\Tax Project.xml
+C:\Users\trevi\My Projects\Visual Studio 17\VB2017\Chap02\Tax Solution\Tax Project\obj\Debug\Tax Project.pdb
