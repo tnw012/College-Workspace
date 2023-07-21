@@ -25,7 +25,7 @@ class GameWindow():
         pygame.display.set_caption(title)
         self.window_colors = colors
         self.font = pygame.font.Font('freesansbold.ttf', 18)
-        self.Scorecard = scorecard.Scorecard(self.window_colors, self.font)             
+        self.Player1Scorcard = scorecard.Scorecard(self.window_colors, self.font)             
         self.RollButton = button.Button(self.window_colors.get("black"), 10, 160, 280, 30, "Roll Dice")
         self.AcceptButton = button.Button(self.window_colors.get("black"), 310, 160, 280, 30, "Accept Roll")
         
@@ -35,7 +35,7 @@ class GameWindow():
     def draw_window_components(self):        
         self.window.fill(self.window_colors.get('background'))
         pygame.draw.line(self.window, self.window_colors.get("black"), (0, 40), (self.win_dimensions[0], 40), 3)
-        self.Scorecard.draw_scorecard(self.window, self.win_dimensions[0], self.win_dimensions[1])
+        self.Player1Scorcard.draw_scorecard(self.window, self.win_dimensions[0], self.win_dimensions[1])
         self.RollButton.draw(self.window)
         self.AcceptButton.draw(self.window)
         

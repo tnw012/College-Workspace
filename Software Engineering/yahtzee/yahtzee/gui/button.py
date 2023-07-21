@@ -1,10 +1,9 @@
-from gui import color
 import pygame
 
 button_font: dict = {
     'style': 'comicsans',
     'size': 18,
-    'color': color.WHITE
+    'color': (255, 255, 255)
 }
 
 class Button:
