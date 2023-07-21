@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="fullPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.00" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.FXMLController">
+    <children>
+        <TextField id="searchBar" fx:id="searchBar" layoutX="116.0" layoutY="118.0" prefHeight="45.0" prefWidth="385.0" promptText="Search" />
+        <Button id="homeButton" fx:id="homeButton" layoutX="34.0" layoutY="119.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="64.0" text="HOME">
+            <font>
+                <Font size="10.0" />
+            </font>
+        </Button>
+        <Button id="addRecipeButton" fx:id="addRecipeButton" layoutX="450" layoutY="10" mnemonicParsing="false" prefHeight="44.0" prefWidth="64.0" text="ADD">
+            <font>
+                <Font size="10.0" />
+            </font>
+        </Button>
+        <Text fx:id="titleTextField" layoutX="34.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Recipe App" wrappingWidth="861.6708984375">
+            <font>
+                <Font size="33.0" />
+            </font>
+        </Text>
+        <ScrollPane fx:id="leftScrollPane" layoutX="34.0" layoutY="178.0" prefHeight="568.0" prefWidth="466.0">
+            <content>
+                <AnchorPane fx:id="leftAnchorPane" minHeight="0.0" minWidth="0.0" prefHeight="566.0" prefWidth="464.0">
+                    <children>
+                        <ListView fx:id="recipeList" layoutX="1.0" layoutY="1.0" prefHeight="567.0" prefWidth="462.0" />
+                        <ImageView fx:id="imageView" fitHeight="872.0" fitWidth="854.0" layoutX="5.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+
+                    </children></AnchorPane>
+            </content>
+        </ScrollPane>
+      <SplitPane fx:id="splitPane" dividerPositions="0.36363636363636365" layoutX="540.0" layoutY="39.0" orientation="VERTICAL" prefHeight="706.0" prefWidth="785.0">
+        <items>
+          <AnchorPane fx:id="topRightAnchorPane" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <TextArea fx:id="topRightTextArea" layoutX="1.0" prefHeight="349.0" prefWidth="785.0" />
+               </children>
+            </AnchorPane>
+          <AnchorPane fx:id="bottomRightAnchorPane" minHeight="0.0" minWidth="0.0" prefHeight="300.0" prefWidth="553.0">
+               <children>
+                  <TextArea fx:id="bottomRightTextArea" layoutX="1.0" layoutY="-2.0" prefHeight="447.0" prefWidth="782.0" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+    </children>
+</Pane>
